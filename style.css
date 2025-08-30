@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=National+Park:wght@200..800&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.national-font {
+  font-family: "National Park", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#app {
+  color: white;
+  width: max-content;
+  height: 100vh;
+  background-color: black;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: #51347c;
+}
+
+#app .head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 2.1rem;
+  font-weight: 500;
+  /* width: 98%; */
+  padding: 0 10px;
+
+  & .headImg {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7dc4cd;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: 0.3s ease;
+    }
+  }
+}
+
+main {
+  width: 380px;
+  max-width: 380px;
+  /* height: 300px; */
+  background-color: #694899;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 25px;
+  box-shadow: -1px 3px 10px 5px #1513161c;
+
+  & .queCount {
+    text-align: center;
+    color: #eae3fd;
+    font-size: 1.15em;
+  }
+  & .que {
+    font-weight: 550;
+    /* width: 90%; */
+    font-size: 1.75rem;
+    line-height: 35px;
+    letter-spacing: 0.7px;
+    /* text-align: center; */
+    margin: auto;
+  }
+
+  & .optsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  & .optionItem {
+    list-style: none;
+    background-color: #7352a5;
+    padding: 12px 18px;
+    font-weight: 450;
+    text-transform: capitalize;
+    border-radius: 12px;
+    border: 0.5px solid #9871ca;
+    letter-spacing: 0.3px;
+    font-size: 1.26rem;
+    /* box-shadow: -2px 3px 1px 0px #4b2e6d; */
+    box-shadow: -1px 3px 1px 0px #38333d70;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #8465b5;
+      transition: 0.2s ease;
+    }
+  }
+  & button {
+    width: 100%;
+    background-color: #5579ff;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 15px 0;
+    /* margin-top: 20px; */
+    font-size: 1.35rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    box-shadow: -1px 3px 10px 0px #38333d70;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    &:hover {
+      background-color: #476bfa;
+      transition: 0.2s ease;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+    #app .head {
+        font-size: 2rem;
+    }
+}
